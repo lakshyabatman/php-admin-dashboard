@@ -2,7 +2,7 @@
     $servername = "localhost";
     $username = "lakshya";
     $password = "lakshya2212";
-    $dbname = "itbadmin";
+    $dbname = "eduprimestudent";
 
     $conn = mysqli_connect($servername, $username, $password, $dbname);  
     if (!$conn) {

@@ -1,78 +1,27 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Dashboard</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-          <img src="" widdiv="30" height="30" class="d-inline-block align-top" alt="">
-          IT BODHI ADMIN
-        </a>
-      </nav>
-      <div class=" mt-5 ">
-          <div class="bg-light p-2  container">
-            <form class="form-group my-1 row" id="queryForm" >
-               <div class="col-sm-5">
-                <input type="date" name="date_from" placeholder="From" id=""> 
-                <label >-</label>
-                <input type="date" name="date_to" placeholder="To" id=""> 
-                <select name="course_name">
-                    <option value="" disabled>Courses</option>
-                    <option value="lakshya">Lakshya</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                  </select> 
-               </div>
-               <div class="col-sm-2">
-               <label >Due </label>
-                  <input type="checkbox" name="due">
-               </div>
-               <div class="col-sm-4">
-                <input type="text" placeholder="Name" class="w-50 " name="student_name" >
-                <input type="Submit" name="query" class="btn btn-success">
-               </div>
-            </form>
-          </div>
-          <div class=" mx-2 mt-5 bg-light">        
-                        <div>
-                          <div class="row">
-                            <div class="col-sm-1">Order_id</div>
-                            <div class="col-sm-1">Order Date</div>
-                            <div class="col-sm-1">Course Name</div>
-                            <div class="col-sm-1">Email</div>
-                            <div class="col-sm-1">Phone Number</div>
-                            <div class="col-sm-1">College Name</div>
-                            <div class="col-sm-1">Student Name</div>
-                            <div class="col-sm-1">Course Fee</div>
-                            <div class="col-sm-1">Discount in %</div>
-                            <div class="col-sm-1">Fee Deposited</div>
-                            <div class="col-sm-1">Due</div>
-                            <div class="col-sm-1">Remarks</div>
-                          </div>
-                        </div>
-                         <div class="row mx-1" id="tb">
-                        </div>
-                      </table>
-          </div>
-      </div>
-      <script src="vendor/moment.min.js"></script>
-      <script src="js/ui.js"></script>
-      <?php
-        require('./config/config.php');
-        $sql = "SELECT * FROM student_data";
-        require('./util/fetch.php');
-      ?>
-      <script src="js/filter.js"></script>
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">IT Bodhi</a>
+</nav>
+<div class="login-page">
+  <div class="form">
+    
+    <form class="login-form" action="dashboard.php" method="POST">
+      <input type="text" placeholder="username" name="user_name">
+      <input type="password" placeholder="password" name="password">
+      <input type="Submit" name="login" class="submit-btn" value="Login">
+    </form>
+  </div>
+</div>
 </body>
 </html>
-
-
 

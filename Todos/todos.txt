@@ -1,0 +1,4 @@
+The updated data isn't storing in the entries object !
+
+Demo logic is applied to fetch and ui but not in update
+frontend requries work

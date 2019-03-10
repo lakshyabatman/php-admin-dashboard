@@ -1,0 +1,12 @@
+
+
+.myInput{
+    width:110px;
+
+}
+.myInput1{
+    min-width:110px;
+   
+    display: inline-block;
+
+}
